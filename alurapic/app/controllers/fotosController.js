@@ -1,8 +1,6 @@
 FotosController = function() {    
     this.mongoose = require('mongoose');
     this.model    = this.mongoose.model('Foto');
-
-    console.log("OPA!!! ESTOU SENDO CRIADO!!!");
 };
 
 FotosController.prototype.listar = function(request, response) {   
