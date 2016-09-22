@@ -11,7 +11,8 @@ app.use(bodyParser.json());
 //require('../app/controllers/gruposController')(app);
 
 consign({cwd: 'app' })    
-    .include('controllers')
+    .include('models')
+    .then('controllers')
     .then('routes')
     .into(app);
 
